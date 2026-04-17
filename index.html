@@ -13,7 +13,6 @@
             --card-bg: #151515;
         }
 
-        /* --- ANIMATIONS --- */
         @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes slideUpFade { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes glow { 0% { box-shadow: 0 0 5px var(--gold-glow); } 50% { box-shadow: 0 0 20px var(--gold-glow); } 100% { box-shadow: 0 0 5px var(--gold-glow); } }
@@ -93,7 +92,6 @@
             padding-left: 10px;
         }
 
-        /* CUSTOM SLIDER STYLING */
         .slider-container { width: 100%; position: relative; padding-bottom: 20px; }
         .slider {
             -webkit-appearance: none;
@@ -192,7 +190,6 @@
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showSuccess();}"></iframe>
 
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSen413ZIfb79D1BSdH9xR4FfVtOSeLaq9fjjK9_JHoZ_RQJpA/formResponse" 
-      method="POST">" 
           method="POST" 
           target="hidden_iframe" 
           onsubmit="submitted=true;">
@@ -200,7 +197,7 @@
         <div class="question">
             <label>Current timing and venue thoughts?</label>
             <div class="slider-container">
-                <input type="range" min="1" max="10" value="5" class="slider" name="entry.1982838308" id="timingSlider">
+                <input type="range" min="1" max="10" value="5" class="slider" name="entry.85194000" id="timingSlider">
                 <div class="slider-labels">
                     <span>Need Change</span>
                     <span>No Change</span>
@@ -221,16 +218,17 @@
 
         <div class="question">
             <label>Tournament Frequency Preference:</label>
-            <select name="entry.85194000" required>
-                <option value="More frequently">More frequently</option>
-                <option value="Less frequently">Less frequently</option>
+            <select name="entry.807952429" required>
+                <option value="" disabled selected>Select an option</option>
                 <option value="The current rhythm is fine">The current rhythm is fine</option>
+                <option value="More Frequently">More Frequently</option>
+                <option value="Less Frequently">Less Frequently</option>
             </select>
         </div>
 
         <div class="question">
             <label>The #1 way to improve Challengers Cricket Club?</label>
-            <textarea name="entry.807952429" rows="3" placeholder="Drop your suggestions here..."></textarea>
+            <textarea name="entry.1982838308" rows="3" placeholder="Drop your suggestions here..."></textarea>
         </div>
 
         <button type="submit" class="btn-submit">Submit Feedback</button>
