@@ -190,7 +190,9 @@
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showSuccess();}"></iframe>
 
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSen413ZIfb79D1BSdH9xR4FfVtOSeLaq9fjjK9_JHoZ_RQJpA/formResponse" 
-          method="POST">
+          method="POST" 
+          target="hidden_iframe" 
+          onsubmit="submitted=true;">
         
         <div class="question">
             <label>Current timing and venue thoughts?</label>
@@ -237,7 +239,7 @@
     <img src="Logo.jpg" alt="Challengers Cricket Club" class="logo" style="width: 80px; height: 80px;">
     <h2>Cheers!</h2>
     <p style="color: var(--gold); font-weight: bold; font-size: 1.1rem; margin-top: 15px;">Feedback Received.</p>
-    <p style="color: #ccc; line-height: 1.5;">We'll review your input and see you on the pitch!</p>
+    <p style="color: #ccc; line-height: 1.5; font-size: 1.1rem;">See you on the Turf next Saturday!</p>
     <button class="btn-submit" onclick="location.reload()" style="animation-delay: 0s; margin-top: 25px; font-size: 0.9rem;">Send Another</button>
 </div>
 
